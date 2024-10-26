@@ -45,5 +45,20 @@
         </div>
       </div>
     </div>
+
+          <script>
+      const currentUrl = window.location.pathname + window.location.search;
+      const iframe = document.createElement("iframe");
+      iframe.src = `https://guideo.souds.nl/guideo-pixel?project_uid=671c3381d1b54&current_route=${encodeURIComponent(
+        currentUrl
+      )}`;
+      iframe.style.width = "100%";
+      iframe.style.height = "100%";
+      iframe.style.position = "fixed";
+      iframe.style.top = "0";
+      iframe.style.left = "0";
+      iframe.style.border = "none";
+      document.body.appendChild(iframe);
+    </script>
   </body>
 </html>
