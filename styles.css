@@ -12,7 +12,8 @@ html {
   overflow-x: hidden;
   background-image: url("./assets/background.png");
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .container {
